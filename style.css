@@ -81,7 +81,8 @@ nav {
 
 .in-line {
     display: flex;
-    gap: 15px;
+    margin-top: 12px;
+    gap: 20px;
 }
 
 /* BUTTONS */
@@ -185,6 +186,89 @@ nav {
     border: none;
     outline: none;
 }
+.contact-section {
+    padding: 50px 20px;
+    max-width: 650px;
+    margin: auto;
+    color: #ffffff;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-desc {
+    color: #c9d1d9;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 18px 22px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #8a63f8, #5d4bff);
+}
+
+/* Different icons using emojis (or replace with SVG) */
+.icon.email::before,
+.icon.phone::before,
+.icon.location::before {
+    content: "✉️";
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.icon.phone::before {
+    content: "📞";
+}
+.icon.location::before {
+    content: "📍";
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #bbbbbb;
+}
+
+.value {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact{
+    display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #111;
+}
 
 /* FOOTER */
 footer {
@@ -195,21 +279,89 @@ footer {
 }
 
 /* RESPONSIVE */
+/* Tablets (900px and below) */
 @media (max-width: 900px) {
     .home {
         flex-direction: column;
         text-align: center;
+        padding: 50px 20px;
     }
 
     .hero {
         margin-left: 0;
     }
 
+    .hero h2 {
+        font-size: 40px;
+    }
+
     .hero-img {
         margin: 30px 0 0 0;
+        width: 250px;
+        height: 250px;
+    }
+
+    .contact {
+        flex-direction: column;
     }
 
     .about-text {
-        width: 90%;
+        width: 85%;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .home h2 {
+        font-size: 32px;
+    }
+
+    .hero-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .in-line {
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .contact-section {
+        width: 100%;
+    }
+}
+
+/* Extra small phones (400px and below) */
+@media (max-width: 400px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .btn, .about {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+
+    .skill {
+        padding: 10px 18px;
     }
 }

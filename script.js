@@ -7,3 +7,4 @@ document.querySelector(".contact-form").addEventListener("submit", (e) => {
     alert("Your message has been sent!");
     e.target.reset();     // clear all inputs
 });
+// qbgx qyta rxbe qryg
