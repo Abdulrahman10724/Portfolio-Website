@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <h1 class="logo">MyPortfolio</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="home">
+    <section id="home" class="hero">
+        <h2>Hello, I'm <br> <span class="highlight">Abdul Rahman</span></h2>
+        <p>A passionate Web Developer & Designer crafting beautiful websites.</p>
+
+        <div class="in-line">
+            <button class="btn" onclick="scrollToSection('projects')">View My Work</button>
+            <button class="btn" onclick="scrollToSection('contact')">Get in Touch</button>
+        </div>
+    </section>
+
+    <img src="image.jpg" class="hero-img" alt="portfolio image">
+</div>
+
+<section id="about" class="section">
+    <button class="about">About Me</button>
+
+    <h2 class="title">Who I Am</h2>
+
+    <p class="about-text">
+        I'm a dedicated full-stack developer with a passion for creating innovative web solutions.
+        With expertise in modern technologies like React, Laravel, and Node.js, I bring ideas to life
+        through clean, efficient code and intuitive user experiences.
+        I believe in continuous learning and staying ahead of industry trends.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2 class="title">Skills</h2>
+    <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C Language</div>
+        <div class="skill">Dart</div>
+        <div class="skill">Flutter</div>
+        <div class="skill">PHP</div>
+        <div class="skill">MySQL</div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2 class="title">Projects</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Voting System</h3>
+            <p>Preference based online voting system with secure file storage</p>
+            <a href="#" class="view-btn">View</a>
+        </div>
+
+        <div class="project-card">
+            <h3>News Website</h3>
+            <p>PHP powered website with pagination and category filtering</p>
+            <a href="#" class="view-btn">View</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive portfolio showcasing skills and projects</p>
+            <a href="#" class="view-btn">View</a>
+        </div>
+    </div>
+</section>
+
+<div class="contact">
+<section id="contact" class="section">
+    <h2 class="title">Contact Me</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+ <section class="contact-section">
+    <h2 class="contact-title">Let's connect</h2>
+    <p class="contact-desc">
+        I'm always open to discussing new projects, creative ideas, or opportunities.
+        Feel free to reach out!
+    </p>
+
+    <div class="contact-box">
+        <div class="icon email"></div>
+        <div>
+            <p class="label">Email</p>
+            <p class="value">abdulrahman10725@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="contact-box">
+        <div class="icon phone"></div>
+        <div>
+            <p class="label">Phone</p>
+            <p class="value">+92 336 2224694</p>
+        </div>
+    </div>
+
+    <div class="contact-box">
+        <div class="icon location"></div>
+        <div>
+            <p class="label">Location</p>
+            <p class="value">Pakistan</p>
+        </div>
+    </div>
+</section>
+
+    </section>
+</div>
+
+
+<footer>
+    <p>© Abdul Rahman - All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
