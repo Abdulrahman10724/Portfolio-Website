@@ -12,47 +12,46 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 // --- 2. DYNAMIC ROTATING TITLE EFFECT ---
-const titleElement = document.querySelector(".typed-text");
-// Updated titles for the typing effect
-const titles = ["Abdul Rahman", "Data Scientist", "Full-Stack Developer", "Flutter Developer", "Web Designer"];
-let titleIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+// --- NEW TYPING EFFECT FOR PASSIONS ---
+const typedText = document.querySelector(".typed-text");
 
-function typeWriter() {
-    const currentTitle = titles[titleIndex];
+const passions = [
+    "Full Stack Developer ",
+    "UI/UX Designer",
+    "Problem Solver",
+    "Creative thinker",
+];
 
-    if (isDeleting) {
-        // Deleting effect
-        titleElement.textContent = currentTitle.substring(0, charIndex - 1);
-        charIndex--;
-        // Speed up deletion
-        if (charIndex === 0) {
-            isDeleting = false;
-            titleIndex = (titleIndex + 1) % titles.length; // Move to the next title
-            setTimeout(typeWriter, 500); // Pause before typing next word
-        } else {
-            setTimeout(typeWriter, 50);
+let index = 0;
+let charIndex2 = 0;
+let deleting = false;
+
+function typeEffect() {
+    const current = passions[index];
+
+    if (!deleting) {
+        typedText.textContent = current.substring(0, charIndex2 + 1);
+        charIndex2++;
+        if (charIndex2 === current.length) {
+            deleting = true;
+            setTimeout(typeEffect, 2000); 
+            return;
         }
     } else {
-        // Typing effect
-        titleElement.textContent = currentTitle.substring(0, charIndex + 1);
-        charIndex++;
-        // Speed up typing
-        if (charIndex === currentTitle.length) {
-            isDeleting = true;
-            setTimeout(typeWriter, 2000); // Pause at the end of the word
-        } else {
-            setTimeout(typeWriter, 120);
+        typedText.textContent = current.substring(0, charIndex2 - 1);
+        charIndex2--;
+        if (charIndex2 === 0) {
+            deleting = false;
+            index = (index + 1) % passions.length;
         }
     }
+
+    setTimeout(typeEffect, deleting ? 60 : 120);
 }
 
-// Start typing when page loads
-window.addEventListener('load', () => {
-    typeWriter();
+window.addEventListener("load", () => {
+    typeEffect();
 });
-
 
 // --- 3. PROJECT FILTERING FUNCTIONALITY ---
 const filterButtons = document.querySelectorAll('.filter-btn');

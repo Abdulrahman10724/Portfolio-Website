@@ -18,16 +18,17 @@
     --gradient-end: #9333ea;   /* Purple */
 }
 body {
-    background: linear-gradient(135deg, #ccc8c8, #2a013fc3, #2f0119, #ff6b00);
+background: linear-gradient(188deg, #1fd342, #292b55, #12c199);
     background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-    color: #fff;
+    animation: gradientBg 12s ease infinite;
 }
-@keyframes gradientMove {
+
+@keyframes gradientBg {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
 
 /* NAVBAR */
 /* ... (nav styles) ... */
@@ -115,6 +116,22 @@ nav {
     padding: 80px 60px;
     min-height: 90vh;
 }
+.typed-container {
+    font-size: 2rem; /* bigger size */
+    font-weight: 600; 
+    color: #e6e6e6;
+    margin-top: 15px;
+}
+
+.typed-text {
+    color: var(--primary-color);
+    font-size: 2.2rem; /* even bigger typing text */
+    font-weight: 700;
+    border-right: 3px solid var(--primary-color);
+    padding-right: 6px;
+}
+
+
 
 .hero { max-width: 600px; }
 
@@ -290,7 +307,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: px;
     transition: 0.3s;
     cursor: default;
 }
