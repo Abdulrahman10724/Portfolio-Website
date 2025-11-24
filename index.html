@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdul Rahman | Software Developer</title>
+    <title>Abdul Rahman | Data Scientist</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
@@ -18,7 +18,7 @@
                 <span class="first-name">Abdul</span>
                 <span class="last-name">Rahman</span>
             </h1>
-            <ul class="nav-links">
+            <ul class="main-links"> 
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -34,23 +34,26 @@
 
     <main>
         <div class="home">
-            <section id="home" class="hero hidden">
+            <section id="home" class="home-content hidden"> 
                 <h2>Hello, I'm <span class="highlight">Abdul Rahman</span></h2>
                 <p class="typed-container">I'm passionate about <span class="typed-text"></span></p>
 
-
-                <div class="in-line">
+                <div class="button-group"> 
                     <a href="#projects" class="btn primary-btn">View My Work</a>
                     <a href="#contact" class="btn secondary-btn">Get in Touch</a>
                 </div>
             </section>
 
-            <img src="image.jpg" class="hero-img hidden" alt="Abdul Rahman">
+            <img src="image.jpg" class="profile-pic hidden" alt="Abdul Rahman"> 
+            
+
+[Image of a professional software developer working on a sleek computer]
+
 
         </div>
 
         <section id="about" class="section hidden">
-            <button class="about-tag">About Me</button>
+            <button class="tag-label">About Me</button> 
             <h2 class="title">Who I Am</h2>
             <p class="about-text">
                 I'm a dedicated full-stack developer with a passion for creating innovative web solutions.
@@ -62,7 +65,7 @@
         <section id="education" class="section hidden">
             <h2 class="title">Education</h2>
             <div class="education-container">
-                <div class="edu-card">
+                <div class="study-box"> 
                     <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
                     <div class="edu-content">
                         <h3>Undergraduate (BSDS)</h3>
@@ -70,7 +73,7 @@
                         <p>FAST-NUCES</p>
                     </div>
                 </div>
-                <div class="edu-card">
+                <div class="study-box"> 
                     <div class="edu-icon"><i class="fas fa-university"></i></div>
                     <div class="edu-content">
                         <h3>Intermediate</h3>
@@ -78,7 +81,7 @@
                         <p>PECHS Government College</p>
                     </div>
                 </div>
-                <div class="edu-card">
+                <div class="study-box"> 
                     <div class="edu-icon"><i class="fas fa-school"></i></div>
                     <div class="edu-content">
                         <h3>Matriculation</h3>
@@ -92,37 +95,37 @@
         <section id="skills" class="section hidden">
             <h2 class="title">Technical Skills</h2>
             <div class="skills-container">
-                <div class="skill-card">
+                <div class="skill-item"> 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                     <p>HTML</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
                     <p>CSS</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                         alt="JS">
                     <p>JavaScript</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
                     <p>C Lang</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
                     <p>Dart</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
                         alt="Flutter">
                     <p>Flutter</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
                     <p>PHP</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                     <p>MySQL</p>
                 </div>
@@ -133,40 +136,40 @@
             <h2 class="title">Projects</h2>
 
             <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="category-btn active" data-filter="all">All</button>
+                <button class="category-btn" data-filter="web">Web Development</button>
+                <button class="category-btn" data-filter="app">App Development</button>
             </div>
 
             <div class="project-grid">
-                <div class="project-card" data-category="web">
+                <div class="project-item" data-category="web"> 
                     <h3>Voting System</h3>
                     <p>Preference based online voting system with secure file storage.</p>
                     <div class="tags">
                         <span class="tag">C</span> <span class="tag">Raylib</span>
                     </div>
-                    <a href="#" class="view-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="detail-link">View Project <i class="fas fa-arrow-right"></i></a> 
                 </div>
 
-                <div class="project-card" data-category="web">
+                <div class="project-item" data-category="web"> 
                     <h3>News Website</h3>
                     <p>PHP powered website with pagination and category filtering.</p>
                     <div class="tags">
                         <span class="tag">PHP</span> <span class="tag">MySQL</span>
                     </div>
-                    <a href="#" class="view-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="detail-link">View Project <i class="fas fa-arrow-right"></i></a> 
                 </div>
 
-                <div class="project-card" data-category="app">
+                <div class="project-item" data-category="app"> 
                     <h3>Flutter Chat App</h3>
                     <p>Real-time messaging application using Firebase authentication.</p>
                     <div class="tags">
                         <span class="tag">Flutter</span> <span class="tag">Dart</span>
                     </div>
-                    <a href="#" class="view-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="detail-link">View Project <i class="fas fa-arrow-right"></i></a> 
                 </div>
 
-                <div class="project-card" data-category="web">
+                <div class="project-item" data-category="web"> 
                     <h3>Personal Portfolio</h3>
                     <p>A responsive portfolio showcasing skills and projects.</p>
                     <div class="tags">
@@ -174,7 +177,7 @@
                         <span class="tag">CSS</span>
                         <span class="tag">JS</span>
                     </div>
-                    <a href="#" class="view-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="detail-link">View Project <i class="fas fa-arrow-right"></i></a> 
                 </div>
             </div>
         </section>
@@ -182,7 +185,7 @@
         <div class="contact-wrapper hidden">
             <section id="contact" class="section contact-left">
                 <h2 class="title">Contact Me</h2>
-                <form class="contact-form">
+                <form class="simple-form"> 
                     <input type="text" placeholder="Your Name" required />
                     <input type="email" placeholder="Your Email" required />
                     <textarea placeholder="Your Message" rows="5"></textarea>
@@ -191,13 +194,13 @@
                 </form>
             </section>
 
-            <section class="contact-right">
+            <section class="contact-info"> 
                 <h2 class="contact-title">Let's connect</h2>
                 <p class="contact-desc">
                     I'm always open to discussing new projects, creative ideas, or opportunities.
                 </p>
 
-                <div class="contact-box">
+                <div class="info-item"> 
                     <div class="icon email"><i class="fas fa-envelope"></i></div>
                     <div>
                         <p class="label">Email</p>
@@ -205,7 +208,7 @@
                     </div>
                 </div>
 
-                <div class="contact-box">
+                <div class="info-item"> 
                     <div class="icon phone"><i class="fas fa-phone-alt"></i></div>
                     <div>
                         <p class="label">Phone</p>
@@ -213,7 +216,7 @@
                     </div>
                 </div>
 
-                <div class="contact-box">
+                <div class="info-item"> 
                     <div class="icon location"><i class="fas fa-map-marker-alt"></i></div>
                     <div>
                         <p class="label">Location</p>

@@ -6,16 +6,15 @@
     scroll-behavior: smooth;
 }
 
-/* ... (existing styles, e.g., root variables, body, nav) ... */
 
 :root {
-    --primary-color: #ff4500; /* Vibrant Red-Orange for highlight */
+    --primary-color: #ff4500; 
     --dark-bg: #0d0a1b; 
     --text-color: #e0e0e0;
 
-    /* NEW GRADIENT COLORS */
-    --gradient-start: #2563eb; /* Blue */
-    --gradient-end: #9333ea;   /* Purple */
+    
+    --gradient-start: #2563eb; 
+    --gradient-end: #9333ea;   
 }
 body {
 background: linear-gradient(188deg, #1fd342, #292b55, #12c199);
@@ -30,35 +29,24 @@ background: linear-gradient(188deg, #1fd342, #292b55, #12c199);
 }
 
 
-/* NAVBAR */
-/* ... (nav styles) ... */
 
-/* UPDATED LOGO STYLING FOR EASY GRADIENT */
+/*  LOGO STYLING */
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
     
-    /* 1. Apply the gradient as a background image */
     background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
     
-    /* 2. Clip the background image to the shape of the text */
     -webkit-background-clip: text;
     background-clip: text;
     
-    /* 3. Make the text transparent so the background gradient shows through */
     color: transparent; 
 }
 
-/* We still keep the span structure, but they now just inherit the transparent color,
-   making the entire name gradient-colored */
 .logo .first-name, .logo .last-name {
-    /* Ensures the entire name follows the gradient style */
     color: transparent; 
 }
 
-/* ... (rest of the CSS remains the same) ... */
-
-/* BODY & BACKGROUND */
 
 /* NAVBAR */
 nav {
@@ -76,7 +64,6 @@ nav {
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
-    /* Base color, children spans will override */
 }
 .nav-links {
     list-style: none;
@@ -108,7 +95,6 @@ nav {
 
 .menu-btn { display: none; color: var(--primary-color); font-size: 1.8rem; cursor: pointer; }
 
-/* HOME SECTION */
 .home {
     display: flex;
     justify-content: space-around;
@@ -117,7 +103,7 @@ nav {
     min-height: 90vh;
 }
 .typed-container {
-    font-size: 2rem; /* bigger size */
+    font-size: 2rem; 
     font-weight: 600; 
     color: #e6e6e6;
     margin-top: 15px;
@@ -125,7 +111,7 @@ nav {
 
 .typed-text {
     color: var(--primary-color);
-    font-size: 2.2rem; /* even bigger typing text */
+    font-size: 2.2rem; 
     font-weight: 700;
     border-right: 3px solid var(--primary-color);
     padding-right: 6px;
@@ -174,7 +160,6 @@ nav {
 }
 
 .primary-btn {
-    /* NEW Button Gradient: Deep Red to Gold */
     background: linear-gradient(135deg, #cc2e00, #ff8c00);
     color: white;
     box-shadow: 0 8px 15px rgba(255, 69, 0, 0.3);
@@ -218,7 +203,7 @@ nav {
     color: var(--text-color);
     display: block; 
     position: relative;
-    padding-top: 10px; /* Space between button and title */
+    padding-top: 10px; 
 }
 
 .title::after {
@@ -406,11 +391,9 @@ nav {
 }
 
 /* CONTACT SECTION */
-/* CONTACT SECTION */
 .contact-wrapper {
     display: flex;
     justify-content: center;
-    /* ADDED: Vertically align both sections to the center */
     align-items: center; 
     gap: 60px;
     padding: 80px 60px;
@@ -418,17 +401,12 @@ nav {
     margin: auto;
 }
 
-/* We must remove or reduce the general section padding for the contact form 
-   to align it better with the contact-right box. 
-*/
 #contact.contact-left {
-    /* Removing the default padding from the general .section class */
     padding: 0; 
-    text-align: left; /* Alignment change for the form */
+    text-align: left; 
 }
 
 .contact-left .title {
-    /* Adjusting title margin if needed */
     margin-bottom: 20px; 
     text-align: left;
 }
@@ -476,13 +454,13 @@ nav {
     background: rgba(255, 69, 0, 0.05);
 }
 .contact-box .value a {
-    color: var(--text-color); /* Inherit main text color */
-    text-decoration: none;    /* Remove underline */
+    color: var(--text-color);
+    text-decoration: none;    
     transition: color 0.3s;
 }
 
 .contact-box .value a:hover {
-    color: var(--primary-color); /* Highlight on hover */
+    color: var(--primary-color); 
 }
 .icon {
     width: 50px;
@@ -509,7 +487,7 @@ footer {
     border-top: 1px solid #1a1a2e;
 }
 
-/* ANIMATIONS & RESPONSIVE (Kept from professional version) */
+/* ANIMATIONS  */
 .hidden { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1); }
 .show { opacity: 1; transform: translateY(0); }
 

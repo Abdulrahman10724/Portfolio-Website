@@ -1,4 +1,4 @@
-// --- 1. SCROLL ANIMATION (Intersection Observer) ---
+//  SCROLL ANIMATION 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -11,8 +11,7 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
-// --- 2. DYNAMIC ROTATING TITLE EFFECT ---
-// --- NEW TYPING EFFECT FOR PASSIONS ---
+// changing title
 const typedText = document.querySelector(".typed-text");
 
 const passions = [
@@ -53,7 +52,7 @@ window.addEventListener("load", () => {
     typeEffect();
 });
 
-// --- 3. PROJECT FILTERING FUNCTIONALITY ---
+//  PROJECT FILTER
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -70,12 +69,12 @@ filterButtons.forEach(button => {
             const cardCategory = card.getAttribute('data-category');
 
             if (filterValue === 'all' || cardCategory === filterValue) {
-                // Show the card
+                // Show cards
                 card.style.display = 'flex';
                 card.style.opacity = '1';
                 card.style.transform = 'scale(1)';
             } else {
-                // Hide the card
+                // Hide cards
                 card.style.opacity = '0';
                 card.style.transform = 'scale(0.9)';
                 setTimeout(() => {
@@ -87,7 +86,7 @@ filterButtons.forEach(button => {
 });
 
 
-// --- 4. MOBILE NAVIGATION TOGGLE ---
+// MOBILE NAVIGATION  
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
