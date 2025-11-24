@@ -1,141 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Abdul Rahman | Software Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-<header>
-    <nav class="navbar">
-        <h1 class="logo">MyPortfolio</h1>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">
+            <span class="first-name">Abdul</span>
+            <span class="last-name">Rahman</span>
+        </h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-<div class="home">
-    <section id="home" class="hero">
-        <h2>Hello, I'm <br> <span class="highlight">Abdul Rahman</span></h2>
-        <p>A passionate Web Developer & Designer crafting beautiful websites.</p>
+    <main>
+        <div class="home">
+            <section id="home" class="hero hidden">
+                <h2>Hello, I'm <br> <span class="highlight typed-text"></span></h2>
+                <p>A passionate Web Developer & Designer crafting beautiful websites.</p>
 
-        <div class="in-line">
-            <button class="btn" onclick="scrollToSection('projects')">View My Work</button>
-            <button class="btn" onclick="scrollToSection('contact')">Get in Touch</button>
-        </div>
-    </section>
+                <div class="in-line">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+                </div>
+            </section>
 
-    <img src="image.jpg" class="hero-img" alt="portfolio image">
-</div>
+             <img src="image.jpg" class="hero-img hidden" alt="Abdul Rahman">
 
-<section id="about" class="section">
-    <button class="about">About Me</button>
-
-    <h2 class="title">Who I Am</h2>
-
-    <p class="about-text">
-        I'm a dedicated full-stack developer with a passion for creating innovative web solutions.
-        With expertise in modern technologies like React, Laravel, and Node.js, I bring ideas to life
-        through clean, efficient code and intuitive user experiences.
-        I believe in continuous learning and staying ahead of industry trends.
-    </p>
-</section>
-
-<section id="skills" class="section">
-    <h2 class="title">Skills</h2>
-    <div class="skills-container">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">C Language</div>
-        <div class="skill">Dart</div>
-        <div class="skill">Flutter</div>
-        <div class="skill">PHP</div>
-        <div class="skill">MySQL</div>
-    </div>
-</section>
-
-<section id="projects" class="section">
-    <h2 class="title">Projects</h2>
-
-    <div class="project-grid">
-        <div class="project-card">
-            <h3>Voting System</h3>
-            <p>Preference based online voting system with secure file storage</p>
-            <a href="#" class="view-btn">View</a>
         </div>
 
-        <div class="project-card">
-            <h3>News Website</h3>
-            <p>PHP powered website with pagination and category filtering</p>
-            <a href="#" class="view-btn">View</a>
+        <section id="about" class="section hidden">
+            <button class="about-tag">About Me</button>
+            <h2 class="title">Who I Am</h2>
+            <p class="about-text">
+                I'm a dedicated full-stack developer with a passion for creating innovative web solutions.
+                With expertise in modern technologies like React, Laravel, and Node.js, I bring ideas to life
+                through clean, efficient code and intuitive user experiences.
+            </p>
+        </section>
+
+        <section id="education" class="section hidden">
+            <h2 class="title">Education</h2>
+            <div class="education-container">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-content">
+                        <h3>Undergraduate (BSDS)</h3>
+                        <span class="year">2025 - Present</span>
+                        <p>FAST-NUCES</p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <div class="edu-content">
+                        <h3>Intermediate</h3>
+                        <span class="year">2023 - 2025</span>
+                        <p>PECHS Government College</p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-content">
+                        <h3>Matriculation</h3>
+                        <span class="year">2021 - 2023</span>
+                        <p>Al-Badar Higher Secondary School</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section hidden">
+            <h2 class="title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                    <p>C Lang</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                    <p>Dart</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                        alt="Flutter">
+                    <p>Flutter</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                    <p>PHP</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section hidden">
+            <h2 class="title">Projects</h2>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card" data-category="web">
+                    <h3>Voting System</h3>
+                    <p>Preference based online voting system with secure file storage.</p>
+                    <div class="tags">
+                        <span class="tag">C</span> <span class="tag">Raylib</span>
+                    </div>
+                    <a href="#" class="view-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <h3>News Website</h3>
+                    <p>PHP powered website with pagination and category filtering.</p>
+                    <div class="tags">
+                        <span class="tag">PHP</span> <span class="tag">MySQL</span>
+                    </div>
+                    <a href="#" class="view-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <h3>Flutter Chat App</h3>
+                    <p>Real-time messaging application using Firebase authentication.</p>
+                    <div class="tags">
+                        <span class="tag">Flutter</span> <span class="tag">Dart</span>
+                    </div>
+                    <a href="#" class="view-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive portfolio showcasing skills and projects.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                         <span class="tag">CSS</span>
+                          <span class="tag">JS</span>
+                    </div>
+                    <a href="#" class="view-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-wrapper hidden">
+            <section id="contact" class="section contact-left">
+                <h2 class="title">Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea placeholder="Your Message" rows="5"></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </section>
+
+            <section class="contact-right">
+                <h2 class="contact-title">Let's connect</h2>
+                <p class="contact-desc">
+                    I'm always open to discussing new projects, creative ideas, or opportunities.
+                </p>
+
+                <div class="contact-box">
+                    <div class="icon email"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <p class="label">Email</p>
+                        <p class="value"><a href="mailto:abdulrahman10725@gmail.com">abdulrahman10725@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <div class="icon phone"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <p class="label">Phone</p>
+                        <p class="value"><a href="tel:+923362224694">+92 336 2224694</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <div class="icon location"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <p class="label">Location</p>
+                        <p class="value"><a href="https://maps.google.com/?q=Pakistan" target="_blank">Pakistan</a></p>
+                    </div>
+                </div>
+            </section>
         </div>
+    </main>
 
-        <div class="project-card">
-            <h3>Personal Portfolio</h3>
-            <p>A responsive portfolio showcasing skills and projects</p>
-            <a href="#" class="view-btn">View</a>
-        </div>
-    </div>
-</section>
+    <footer>
+        <p>© Abdul Rahman - All Rights Reserved</p>
+    </footer>
 
-<div class="contact">
-<section id="contact" class="section">
-    <h2 class="title">Contact Me</h2>
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required /><br>
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="5"></textarea>
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-</section>
- <section class="contact-section">
-    <h2 class="contact-title">Let's connect</h2>
-    <p class="contact-desc">
-        I'm always open to discussing new projects, creative ideas, or opportunities.
-        Feel free to reach out!
-    </p>
-
-    <div class="contact-box">
-        <div class="icon email"></div>
-        <div>
-            <p class="label">Email</p>
-            <p class="value">abdulrahman10725@gmail.com</p>
-        </div>
-    </div>
-
-    <div class="contact-box">
-        <div class="icon phone"></div>
-        <div>
-            <p class="label">Phone</p>
-            <p class="value">+92 336 2224694</p>
-        </div>
-    </div>
-
-    <div class="contact-box">
-        <div class="icon location"></div>
-        <div>
-            <p class="label">Location</p>
-            <p class="value">Pakistan</p>
-        </div>
-    </div>
-</section>
-
-    </section>
-</div>
-
-
-<footer>
-    <p>© Abdul Rahman - All Rights Reserved</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
