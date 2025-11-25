@@ -8,7 +8,7 @@
 
 
 :root {
-    --primary-color: #ff4500; 
+    --primary-color: #a7b8a3; 
     --dark-bg: #0d0a1b; 
     --text-color: #e0e0e0;
 
@@ -160,14 +160,14 @@ nav {
 }
 
 .primary-btn {
-    background: linear-gradient(135deg, #cc2e00, #ff8c00);
+    background: linear-gradient(135deg, #0000, #338620);
     color: white;
-    box-shadow: 0 8px 15px rgba(255, 69, 0, 0.3);
+    box-shadow: 0 8px 15px rgba(125, 227, 133, 0.3);
 }
 
 .primary-btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(255, 69, 0, 0.5);
+    box-shadow: 0 12px 25px rgba(123, 234, 149, 0.5);
 }
 
 .secondary-btn {
